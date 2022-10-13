@@ -1,0 +1,203 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #06283D;
+}
+
+.mainpage {
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0.1)),url(./assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Tampilan Navbar */
+
+.navbar nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.logo{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.buttoncl{
+    display: flex;
+    justify-content: right;
+}
+
+.buttonn{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 3px 20px;
+    transition: transform .4s;
+}
+
+.buttonn:hover{
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid white;
+    color: #5F9DF7;
+    transform: scale(1.2);
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    border: transparent;
+}
+button:hover{
+    color: #5F9DF7;
+}
+
+/* content */
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+/* bencana */
+.bencana{
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.buttoncon{
+    display: flex;
+    justify-content: center;
+}
+
+.buttoncon form{
+    padding:none;
+    margin: 30px;
+}
+
+.buttoncon form input{
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: none;
+    margin: -10px;
+    padding: 20px 60px;
+    border-radius: 30px;
+    border: 4px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: capitalize;
+    transition: transform .4s;
+}
+
+.buttoncon form input:hover{
+    color: #150050;
+    transform: scale(1.2);
+    background-color: white;
+    border: 4px solid white;
+}
+
+/* about us */
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #06283D;
+    /* background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0.1)),url(./assets/bg.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+.about img{
+	height: auto;
+	width: 430px;
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text h5 span{
+    color: #5F9DF7;
+}
+
+.about-text p{
+	color: white;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+
+button{
+	background-color:#5F9DF7;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+
+button:hover{
+	background-color: transparent;
+	border: 2px solid #5F9DF7;
+	cursor: pointer;
+    color: white;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
